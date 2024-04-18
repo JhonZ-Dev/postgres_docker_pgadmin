@@ -15,3 +15,7 @@ services:
     environment:
       PGADMIN_DEFAULT_EMAIL: "admin@gmail.com"
       PGADMIN_DEFAULT_PASSWORD: "admin"
+    ports:
+      - "80:80"
+    depends_on:
+      - postgres
